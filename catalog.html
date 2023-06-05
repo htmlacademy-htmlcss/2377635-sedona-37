@@ -3,15 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона (Каталог)</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <h1 class="page-title visually-hidden">Каталог гостиниц городка Седона</h1>
 
   <header class="page-header">
-    <a class="logo-header">
-      <img class="logo-header-part" src="#" alt="Часть логотипа">
-      <img class="logo-header-part" src="#" alt="Часть логотипа">
-      <img class="logo-header-part" src="#" alt="Часть логотипа">
+    <a class="logo-header" href="index.html">
+      <img class="logo-header-image" src="images/logo.png" width="140" height="70" alt="Логотип городка Седона">
     </a>
     <nav class="navigation">
       <ul class="main-navigation-list">
@@ -27,7 +25,7 @@
       </ul>
       <ul class="navigation-user">
         <li class="navigation-user-item">
-          <button class="button navigation-user-search-button"></button>
+          <a class="navigation-user-link" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
@@ -38,7 +36,7 @@
           </a>
         </li>
         <li class="navigation-user-item">
-          <button class="button navigation-user-search-button">Хочу сюда!</button>
+          <a class="button navigation-user-search-button" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -158,12 +156,12 @@
       </div>
       <ul class="cards-list">
         <li class="card">
-          <h3>Amara Resort & Spa</h3>
-          <img class="card-image" src="#" alt="Гостиница Amara Resort & Spa">
-          <dl class="card-details">
-            <dt>Гостиница</dt>
-             <dd>От 4000 ₽</dd>
-          </dl>
+          <a class="card-link" href="#">
+            <h3>Amara Resort & Spa</h3>
+            <img class="card-image" src="images/hotel-1.jpg" width="300" height="212" alt="Гостиница Amara Resort & Spa">
+          </a>
+          <p class="card-type">Гостиница</p>
+          <p class="card-price">От 4000 ₽</p>
           <a class="card-more" href="#">Подробнее</a>
           <button class="favourites" type="submit">В избранное</button>
           <div class="hotel-stars">
@@ -172,16 +170,16 @@
             </p>
           </div>
           <div class="hotel-rating"></div>
-            <span>Рейтинг: 8,5</span>
+            <p>Рейтинг: <span>8,5</span></p>
           </div>
         </li>
         <li class="card">
-          <h3>Villas at Poco Diablo</h3>
-          <img class="card-image" src="#" alt="Гостиница Amara Resort & Spa">
-          <dl class="card-details">
-            <dt>Гостиница</dt>
-             <dd>От 5000 ₽</dd>
-          </dl>
+          <a class="card-link" href="#"></a>
+            <h3>Villas at Poco Diablo</h3>
+            <img class="card-image" src="images/hotel-2.jpg" width="300" height="212" alt="Гостиница Amara Resort & Spa">
+          </a>
+          <p class="card-type">Гостиница</p>
+          <p class="card-price">От 5000 ₽</p>
           <a class="card-more" href="#">Подробнее</a>
           <button class="favourites" type="submit">В избранное</button>
           <div class="hotel-stars">
@@ -190,16 +188,16 @@
             </p>
           </div>
           <div class="hotel-rating"></div>
-            <span>Рейтинг: 9,2</span>
+            <p>Рейтинг: <span>9,2</span></p>
           </div>
         </li>
         <li class="card">
-          <h3>Desert Quail Inn</h3>
-          <img class="card-image" src="#" alt="Гостиница Amara Resort & Spa">
-          <dl class="card-details">
-            <dt>Гостиница</dt>
-             <dd>От 2500 ₽</dd>
-          </dl>
+          <a class="card-link" href="#">
+            <h3>Desert Quail Inn</h3>
+            <img class="card-image" src="images/hotel-3.jpg" width="300" height="212" alt="Гостиница Amara Resort & Spa">
+          </a>
+          <p class="card-type">Гостиница</p>
+          <p class="card-price">От 2500 ₽</p>
           <a class="card-more" href="#">Подробнее</a>
           <button class="favourites" type="submit">В избранное</button>
           <div class="hotel-stars">
@@ -208,17 +206,17 @@
             </p>
           </div>
           <div class="hotel-rating"></div>
-            <span>Рейтинг: 6,9</span>
+            <p>Рейтинг: <span>6,9</span></p>
           </div>
           </div>
         </li>
         <li class="card">
-          <h3>GreenTree Inn</h3>
-          <img class="card-image" src="#" alt="Гостиница Amara Resort & Spa">
-          <dl class="card-details">
-            <dt>Гостиница</dt>
-             <dd>От 1500 ₽</dd>
-          </dl>
+          <a class="card-link" href="#">
+            <h3>GreenTree Inn</h3>
+            <img class="card-image" src="images/hotel-4.jpg" width="300" height="212" alt="Гостиница Amara Resort & Spa">
+          </a>
+          <p class="card-type">Гостиница</p>
+          <p class="card-price">От 1500 ₽</p>
           <a class="card-more" href="#">Подробнее</a>
           <button class="favourites" type="submit">В избранное</button>
           <div class="hotel-stars">
@@ -227,7 +225,7 @@
             </p>
           </div>
           <div class="hotel-rating"></div>
-            <span>Рейтинг: 5,0</span>
+            <p>Рейтинг: <span>5,0</span></p>
           </div>
         </li>
       </ul>
@@ -292,7 +290,7 @@
     <section class="developer">
       <h2 class="visually-hidden">Компания-разработчик сайта</h2>
       <a class="logo-footer-link" href="#">
-        <img class="logo-footer" src="#" alt="Логотип HTMLAcademy">
+        <img class="logo-footer" src="images/html-academy.png" width="115" height="33" alt="Логотип HTMLAcademy">
       </a>
     </div>
   </footer>
