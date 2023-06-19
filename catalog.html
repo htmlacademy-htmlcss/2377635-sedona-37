@@ -130,30 +130,34 @@
               </div>
             </div>
           </fieldset>
-          <button class="button submit-button" type="submit">Применить</button>
-          <button class="button reset-button" type="reset">Сбросить</button>
+          <div class="catalog-filter-buttons">
+            <button class="button submit-button" type="submit">Применить</button>
+            <button class="button reset-button" type="reset">Сбросить</button>
+          </div>
         </form>
       </section>
       <section class="search-results">
-        <h2 class="visually-hidden">Результат поиска гостиниц</h2>
-        <p class="search-results-count">Найдено гостиниц: 38</p>
-        <label>Сортировка гостиниц:
-          <select class="select-control">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
-          </select>
-        </label>
-        <div class="cards-view">
-          <button class="cards-view-format" type="button">
-            <span class="visually-hidden">Показать карточки</span>
-          </button>
-          <button class="cards-view-format" type="button">
-            <span class="visually-hidden">Показать карточку</span>
-          </button>
-          <button class="cards-view-format" type="button">
-            <span class="visually-hidden">Показать список карточек</span>
-          </button>
+        <div class="search-results-header">
+          <h2 class="visually-hidden">Результат поиска гостиниц</h2>
+          <p class="search-results-count">Найдено гостиниц: 38</p>
+          <div class="sorting-container">
+            <select class="select-control">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+          </div>
+          <div class="cards-view">
+            <button class="cards-view-format" type="button">
+              <span class="visually-hidden">Показать карточки</span>
+            </button>
+            <button class="cards-view-format" type="button">
+              <span class="visually-hidden">Показать карточку</span>
+            </button>
+            <button class="cards-view-format" type="button">
+              <span class="visually-hidden">Показать список карточек</span>
+            </button>
+          </div>
         </div>
         <ul class="cards-list">
           <li class="card">
