@@ -9,7 +9,7 @@
   <body>
     <div class="page-container">
 
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="logo-header" href="#">
             <img class="logo-header-image" src="images/logo.png" width="140" height="70" alt="Логотип городка Седона.">
@@ -44,12 +44,12 @@
         </nav>
       </header>
 
-      <main class="main-index main-container">
-        <section class="hero">
+      <main class="main-index main-container" data-test="main">
+        <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Добро пожаловать в великолепную Седону!</h1>
           <img class="hero-image" src="images/welcome.svg" widht="458" height="352" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!">
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <div class="section-title section-title-advantages">
             <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -115,14 +115,14 @@
             </li>
           </ul>
         </section>
-        <section class="services-seach">
+        <section class="services-seach" data-test="search">
           <div class="section-title section-title-services-seach">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
             <a class="button services-seach-button" href="#">Поиск гостиницы в Седоне</a>
         </section>
-        <section class="subscription subscription-index">
+        <section class="subscription subscription-index" data-test="subscribe">
           <div class="section-title section-title-subscription section-title-subscription-index">
             <h2>Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -135,7 +135,7 @@
         </section>
       </main>
 
-      <footer class="page-footer-container">
+      <footer class="page-footer-container" data-test="footer">
         <section class="socials-contacts">
           <h2 class="visually-hidden">Социальные сети и контакты</h2>
           <ul class="socials-list">
@@ -178,6 +178,17 @@
           </a>
         </section>
       </footer>
+
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-auth">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+          </section>
+        </div>
+      </div>
 
     </div>
   </body>
