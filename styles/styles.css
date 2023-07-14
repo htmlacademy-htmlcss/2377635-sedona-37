@@ -567,6 +567,146 @@ body {
   border-radius: 30px;
 }
 
+.modal-close-button {
+  position: absolute;
+  top: 64px;
+  right: 52px;
+}
+
+.modal-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 64px;
+  font-weight: 700px;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 577px;
+}
+
+.field-group {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.check-in-date-title,
+.check-out-date-title,
+.adults-counter-title,
+.childs-counter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.search-form-field {
+  padding: 12px 20px 12px 20px;
+  width: 440px;
+  height: 48px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  background-color:rgba(242, 242, 242, 1);
+  background-image: url("../images/modal-date.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  border: none;
+  border-radius: 4px;
+}
+
+.notification-error,
+.notification {
+  position: absolute;
+  top: 52px;
+  left: 157px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.notification-error {
+  color: rgba(255, 87, 87, 1);
+}
+
+.persons-counter-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.field-group-counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.persons-counter-wrapper .field-group-counter.adults {
+  min-width: 247px;
+}
+
+.persons-counter-wrapper .field-group-counter.childs {
+  min-width: 242px;
+}
+
+.count-field::-webkit-outer-spin-button,
+.count-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.count-field-content {
+  position: relative;
+}
+
+.count-field {
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 110px;
+  height: 48px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  background-color:rgba(242, 242, 242, 1);
+  border: none;
+  border-radius: 4px;
+}
+
+.count-button {
+  position: absolute;
+  width: 40px;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+}
+
+.count-button-minus {
+  left: 0;
+}
+
+.count-button-plus {
+  right: 0;
+}
+
+.modal-search-button {
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: rgba(130, 179, 211, 1);
+  border-radius: 10px;
+}
+
+.modal-search-button:hover,
+.modal-search-button:focus {
+  background-color:rgba(104, 162, 202, 1);
+}
+
 .search-hotels {
   padding: 35px 70px 70px;
   min-height: 412px;
