@@ -45,7 +45,7 @@
     </header>
 
     <main class="main-inner main-container">
-      <section class="search-hotels">
+      <section class="search-hotels" data-test="filter">
         <h1>Гостиницы Седоны</h1>
         <div class="breadcrumbs">
           <ul class="breadcrumbs-list">
@@ -67,41 +67,47 @@
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" id="pool" name="pool" checked>
+                    <span class="checkbox-mark"></span>
                     Бассейн
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" id="parking" name="parking" checked>
+                    <span class="checkbox-mark"></span>
                     Парковка
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="checkbox" id="wi-fi" name="wi-fi">
+                    <span class="checkbox-mark"></span>
                     Wi-Fi
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-group accomodation-type">
-              <legend class="catalog-filter-title">Тип жилья:</legend>
+              <legend class="catalog-filter-title">Тип Жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" id="hotel" name="hotel" checked>
+                    <span class="radio-mark"></span>
                     Гостиница
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" id="motel" name="motel">
+                    <span class="radio-mark"></span>
                     Мотель
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" id="apartment" name="apartment">
+                    <span class="radio-mark"></span>
                     Апартаменты
                   </label>
                 </li>
@@ -123,7 +129,7 @@
               </div>
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-bar">
+                  <div class="range-bar" style="left: 0; width: 226px">
                     <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену</span>
                     </button>
@@ -141,7 +147,7 @@
           </div>
         </form>
       </section>
-      <section class="search-results">
+      <section class="search-results" data-test="catalog">
         <div class="search-results-header">
           <h2 class="visually-hidden">Результат поиска гостиниц</h2>
           <p class="search-results-count">Найдено гостиниц: 38</p>
@@ -263,7 +269,7 @@
           </li>
         </ul>
       </section>
-      <section class="subscription subscription-catalog">
+      <section class="subscription subscription-catalog" data-test="subscribe">
         <div class="section-title section-title-subscription section-title-subscription-catalog">
           <h2>Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -276,7 +282,7 @@
       </section>
     </main>
 
-    <footer class="page-footer-container">
+    <footer class="page-footer-container" data-test="footer">
       <section class="socials-contacts">
         <h2 class="visually-hidden">Социальные сети и контакты</h2>
         <ul class="socials-list">

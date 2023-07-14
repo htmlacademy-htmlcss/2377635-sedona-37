@@ -9,7 +9,7 @@
   <body>
     <div class="page-container">
 
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="logo-header" href="#">
             <img class="logo-header-image" src="images/logo.png" width="140" height="70" alt="Логотип городка Седона.">
@@ -44,12 +44,12 @@
         </nav>
       </header>
 
-      <main class="main-index main-container">
-        <section class="hero">
+      <main class="main-index main-container" data-test="main">
+        <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Добро пожаловать в великолепную Седону!</h1>
           <img class="hero-image" src="images/welcome.svg" widht="458" height="352" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!">
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <div class="section-title section-title-advantages">
             <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -115,14 +115,14 @@
             </li>
           </ul>
         </section>
-        <section class="services-seach">
+        <section class="services-seach" data-test="search">
           <div class="section-title section-title-services-seach">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
             <a class="button services-seach-button" href="#">Поиск гостиницы в Седоне</a>
         </section>
-        <section class="subscription subscription-index">
+        <section class="subscription subscription-index" data-test="subscribe">
           <div class="section-title section-title-subscription section-title-subscription-index">
             <h2>Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -135,7 +135,7 @@
         </section>
       </main>
 
-      <footer class="page-footer-container">
+      <footer class="page-footer-container" data-test="footer">
         <section class="socials-contacts">
           <h2 class="visually-hidden">Социальные сети и контакты</h2>
           <ul class="socials-list">
@@ -178,6 +178,72 @@
           </a>
         </section>
       </footer>
+
+      <div class="modal-container">
+        <div class="modal modal-search">
+          <div class="modal-close-button">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="26" cy="26" r="26" fill="#F2F2F2"/>
+              <path d="M33.4905 20.7829L32.1982 19.4906L26.4905 25.1983L20.7828 19.4906L19.4905 20.7829L25.1982 26.4906L19.4905 32.1983L20.7828 33.4906L26.4905 27.7829L32.1982 33.4906L33.4905 32.1983L27.7828 26.4906L33.4905 20.7829Z" fill="black"/>
+            </svg>
+            <span class="visually-hidden">Закрыть</span>
+          </div>
+          <section class="modal-content">
+            <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="field-group">
+                <label class="check-in-date-title" for="check-in-date">Дата Заезда:</label>
+                <input class="search-form-field check-in-date-field" type="text" id="check-in-date" name="check-in-date" value="27 апреля 2020" required>
+                <span class="notification-error">Мы не можем отправить вас в прошлое.</span>
+              </div>
+              <div class="field-group">
+                <label class="check-out-date-title" for="check-out-date">Дата Выезда:</label>
+                <input class="search-form-field check-out-date-field" type="text" id="check-out-date" name="check-out-date" value="1 сентября 2025" requred>
+                <span class="notification">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+              <div class="persons-counter-wrapper">
+                <div class="field-group-counter adults">
+                  <label class="adults-counter-title" for="adults-counter">Взрослые:</label>
+                  <div class="count-field-content">
+                    <input class="count-field adults-count-field" type="number" id="adults-counter" name="adults-counter" value="2">
+                    <button class="count-button count-button-minus" type="button">
+                      <span class="visually-hidden">Уменьшить количество человек</span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                    </button>
+                    <button class="count-button count-button-plus" type="button">
+                      <span class="visually-hidden">Увеличить количество человек</span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="field-group-counter childs">
+                  <label class="childs-counter-title" for="childs-counter">Дети:</label>
+                  <div class="count-field-content">
+                    <input class="count-field childs-count-field" type="number" id="childs-counter" name="childs-counter" value="2">
+                    <button class="count-button count-button-minus" type="button">
+                      <span class="visually-hidden">Уменьшить количество человек</span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                    </button>
+                    <button class="count-button count-button-plus" type="button">
+                      <span class="visually-hidden">Увеличить количество человек</span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="button modal-search-button" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
 
     </div>
   </body>
